@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
-import { ICON_NAMES, ICON_EXT, ICON_PATH } from '../../constants/icons';
+import { ICON_NAMES, ICON_EXT, ICON_PATH } from 'src/app/core/constants/icons';
 
 @Component({
     selector: 'app-home',

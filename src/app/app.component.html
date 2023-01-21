@@ -1,2 +1,4 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<div class="container mat-app-background">
+    <app-navbar (darkMode)="handleDarkMode($event)"></app-navbar>
+    <router-outlet></router-outlet>
+</div>

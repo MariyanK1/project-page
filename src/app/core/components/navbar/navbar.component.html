@@ -1,21 +1,22 @@
 <mat-toolbar color="primary" class="toolbar-container">
-    <div class="logo" routerLink="/">
-        <img src="assets/golang.png" alt="">
-    </div>
+    <button mat-mini-fab color="accent" routerLink="/" matTooltip="Home">
+        <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
+    </button>
     <span class="fill-remaining-space"></span>
     <div class="nav-buttons">
-        <button mat-raised-button color="accent" routerLink="/">
-            <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
-            Home
-        </button>
-
         <button mat-raised-button color="accent" routerLink="/projects">
             <mat-icon aria-hidden="false" aria-label="business icon">business_center</mat-icon>
             Projects
         </button>
 
-        <button mat-mini-fab color="accent">
-            <mat-icon>wb_sunny</mat-icon>
+        <button mat-raised-button color="accent" routerLink="/">
+            <mat-icon aria-hidden="false" aria-label="contact icon">contact_mail</mat-icon>
+            Contact
+        </button>
+
+        <button mat-mini-fab color="accent" matTooltip="{{darkMode.value ? 'Light Mode' : 'Dark Mode'}}"
+            (click)="toggleDarkMode()">
+            <mat-icon>{{darkMode.value ? 'wb_sunny' : 'dark_mode'}}</mat-icon>
         </button>
     </div>
 

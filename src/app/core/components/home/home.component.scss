@@ -28,7 +28,9 @@
                 }
             }
 
-            .tech:hover {
+            .tech:hover,
+            // figure out how to work when darkMode is enabled!
+            .darkMode {
                 filter: unset;
             }
         }

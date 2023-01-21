@@ -1,0 +1,16 @@
+.toolbar-container {
+    .logo {
+        width: 2em;
+        cursor: pointer;
+    }
+
+    .fill-remaining-space {
+        flex: 1 1 auto;
+    }
+
+    .nav-buttons {
+        display: flex;
+        gap: 0.3em;
+        align-items: center;
+    }
+}

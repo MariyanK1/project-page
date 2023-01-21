@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="intro-img">
+        <img src="../../../../assets/me.jpg" alt="">
+    </div>
+    <div class="intro">
+        <p>My name is Mariyan and I am a Front end dev, hustler and a mountain climber.</p>
+        <p>I've been front-end dev for almost 2 years now and I love it!</p>
+        <p>My tech stack is:</p>
+        <div class="tech-stack">
+            <div class="tech" *ngFor="let iconName of iconNames; let i = index"
+                matTooltip="{{iconNames[i].length >= 4 ? (iconNames[i] | titlecase) : (iconNames[i] | uppercase)}}">
+                <img src="{{iconPath + iconName + iconExt}}" alt="{{iconName}}" />
+            </div>
+        </div>
+    </div>
+</div>

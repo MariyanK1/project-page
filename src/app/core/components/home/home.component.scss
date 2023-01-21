@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 5em;
+
+    .intro {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.6em;
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(4, 47px);
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            gap: 1.4em 0.8em;
+            margin: 1em 0;
+
+            .tech {
+                filter: grayscale(1);
+
+                img {
+                    border-radius: 100vw;
+                }
+            }
+
+            .tech:hover {
+                filter: unset;
+            }
+        }
+    }
+
+    .intro-img {
+        max-width: 350px;
+
+        img {
+            border-radius: 7px;
+            filter: drop-shadow(2px 4px 6px black);
+        }
+    }
+}

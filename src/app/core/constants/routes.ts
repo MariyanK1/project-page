@@ -20,6 +20,14 @@ export const ROUTES: Routes = [
         title: 'Mariyan :: Projects',
     },
     {
+        path: 'contacts',
+        loadComponent: () =>
+            import('../components/contacts/contacts.component').then(
+                (c) => c.ContactsComponent
+            ),
+        title: 'Mariyan :: Contacts',
+    },
+    {
         path: '**',
         component: PageNotFoundComponent,
         title: 'Mariyan :: 404',

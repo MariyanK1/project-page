@@ -1,0 +1,34 @@
+.contacts-container {
+    font-size: calc(2vw + 2vh + 1vmin);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+    margin-top: 0.6em;
+
+    .phone,
+    .email {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .phone {
+        mat-icon {
+            color: green;
+            width: 1em;
+            height: 1em;
+            font-size: 2em;
+        }
+    }
+
+    .email {
+        mat-icon {
+            color: orangered;
+            width: 1em;
+            height: 1em;
+            font-size: 2em;
+        }
+    }
+}

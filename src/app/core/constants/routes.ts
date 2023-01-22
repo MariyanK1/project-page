@@ -9,6 +9,7 @@ export const ROUTES: Routes = [
             import('../components/home/home.component').then(
                 (c) => c.HomeComponent
             ),
+        title: 'Mariyan :: Home',
     },
     {
         path: 'projects',
@@ -16,6 +17,11 @@ export const ROUTES: Routes = [
             import('../components/projects/projects.component').then(
                 (c) => c.ProjectsComponent
             ),
+        title: 'Mariyan :: Projects',
     },
-    { path: '**', component: PageNotFoundComponent },
+    {
+        path: '**',
+        component: PageNotFoundComponent,
+        title: 'Mariyan :: 404',
+    },
 ];

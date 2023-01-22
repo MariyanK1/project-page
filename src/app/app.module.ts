@@ -2,13 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NavbarModule } from './core/components/navbar/navbar.component.module';
-import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing,module';
+import { NavbarModule } from './core/components/navbar/navbar.component.module';
 
 @NgModule({
-    declarations: [AppComponent, PageNotFoundComponent],
-    imports: [BrowserModule, NavbarModule, AppRoutingModule],
+    declarations: [AppComponent],
+    imports: [BrowserModule, AppRoutingModule, NavbarModule],
     providers: [],
     bootstrap: [AppComponent],
     exports: [],

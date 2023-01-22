@@ -1,23 +1,24 @@
 <mat-toolbar color="primary" class="toolbar-container">
-    <button mat-mini-fab color="accent" routerLink="/" matTooltip="Home">
+    <a mat-mini-fab color="primary" routerLink="/" [routerLinkActiveOptions]="{exact: true}"
+        routerLinkActive="active-link" matTooltip="Home">
         <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
-    </button>
+    </a>
     <span class="fill-remaining-space"></span>
     <div class="nav-buttons">
-        <button mat-raised-button color="accent" routerLink="/projects">
+        <a mat-button routerLink="/projects" routerLinkActive="active-link">
             <mat-icon aria-hidden="false" aria-label="business icon">business_center</mat-icon>
             Projects
-        </button>
+        </a>
 
-        <button mat-raised-button color="accent" routerLink="/">
+        <a mat-button routerLink="/contacts" routerLinkActive="active-link">
             <mat-icon aria-hidden="false" aria-label="contact icon">contact_mail</mat-icon>
-            Contact
-        </button>
+            Contacts
+        </a>
 
-        <button mat-mini-fab color="accent" matTooltip="{{darkMode.value ? 'Light Mode' : 'Dark Mode'}}"
+        <a mat-mini-fab color="primary" matTooltip="{{darkMode.value ? 'Light Mode' : 'Dark Mode'}}"
             (click)="toggleDarkMode()">
             <mat-icon>{{darkMode.value ? 'wb_sunny' : 'dark_mode'}}</mat-icon>
-        </button>
+        </a>
     </div>
 
 </mat-toolbar>

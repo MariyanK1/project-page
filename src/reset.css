@@ -12,14 +12,7 @@
 * {
     margin: 0;
 }
-/*
-  3. Allow percentage-based heights in the application
-*/
-html,
-body {
-    /* TODO: HEIGHT IS NOT ENOUGH */
-    height: 100%;
-}
+
 /*
   Typographic tweaks!
   4. Add accessible line-height
@@ -71,5 +64,4 @@ h6 {
 
 a {
     text-decoration: none;
-    color: inherit;
 }

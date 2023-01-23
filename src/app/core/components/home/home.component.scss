@@ -1,15 +1,23 @@
 .container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 2em;
-    margin-top: 5em;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    @media only screen and (max-width: 1400px) {
+        flex-direction: column;
+        height: auto;
+        padding: 1em 0;
+    }
 
     .intro {
-        text-align: center;
         display: flex;
+        justify-content: center;
         flex-direction: column;
+        gap: 1em;
         font-size: 1.6em;
+        text-align: center;
 
         .tech-stack {
             display: grid;
@@ -18,7 +26,6 @@
             align-items: center;
             justify-items: center;
             gap: 1.4em 0.8em;
-            margin: 1em 0;
 
             .tech {
                 filter: grayscale(1);
@@ -31,6 +38,12 @@
             .tech:hover {
                 filter: unset;
             }
+        }
+
+        .skydiving {
+            width: min-content;
+            margin: 0em auto;
+            border-radius: 5px;
         }
     }
 

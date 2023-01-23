@@ -1,11 +1,7 @@
 .contacts-container {
     font-size: calc(2vw + 2vh + 1vmin);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6em;
     margin-top: 0.6em;
+    height: 100vh;
 
     .phone,
     .email {

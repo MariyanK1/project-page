@@ -3,12 +3,10 @@
     gap: 2em;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 5em 0;
 
     @media only screen and (max-width: 1400px) {
         flex-direction: column;
-        height: auto;
-        padding: 1em 0;
     }
 
     .intro {
@@ -21,22 +19,16 @@
 
         .tech-stack {
             display: grid;
-            grid-template-columns: repeat(4, 47px);
+            grid-template-columns: repeat(5, 47px);
             justify-content: center;
             align-items: center;
             justify-items: center;
             gap: 1.4em 0.8em;
 
             .tech {
-                filter: grayscale(1);
-
                 img {
                     border-radius: 100vw;
                 }
-            }
-
-            .tech:hover {
-                filter: unset;
             }
         }
 

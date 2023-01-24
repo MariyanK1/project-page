@@ -1,118 +1,24 @@
 <div class="projects-container">
-    <mat-card class="example-card">
+    <mat-card class="mat-card" *ngFor="let project of projectsData">
         <mat-card-header>
             <mat-card-title>
-                <h2>Instagram Clone</h2>
+                <h2>{{project.title | titlecase}}</h2>
             </mat-card-title>
         </mat-card-header>
         <mat-divider></mat-divider>
         <mat-card-content>
-            <h4>Tech stack:</h4>
-            <p>{{longText}}</p>
+            <h4>Built with:</h4>
+            <div class="tech-used">
+                <div class="tech" *ngFor="let techName of project.tech">
+                    <img src="{{iconPath + techName + iconExt}}" alt="" matTooltip="{{techName | titlecase}}">
+                </div>
+            </div>
             <h4>Description:</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloremque, hic omnis reprehenderit
-                pariatur
-                aspernatur neque labore nulla laborum reiciendis.</p>
+            <p>{{project.description}}</p>
         </mat-card-content>
         <mat-divider></mat-divider>
         <mat-card-actions>
-            <a mat-raised-button color="primary">Source Code</a>
-        </mat-card-actions>
-        <mat-card-footer>
-            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-        </mat-card-footer>
-    </mat-card>
-
-    <mat-card class="example-card">
-        <mat-card-header>
-            <mat-card-title>
-                <h2>Instagram Clone</h2>
-            </mat-card-title>
-        </mat-card-header>
-        <mat-divider></mat-divider>
-        <mat-card-content>
-            <h4>Tech stack:</h4>
-            <p>{{longText}}</p>
-            <h4>Description:</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloremque, hic omnis reprehenderit
-                pariatur
-                aspernatur neque labore nulla laborum reiciendis.</p>
-        </mat-card-content>
-        <mat-divider></mat-divider>
-        <mat-card-actions>
-            <a mat-raised-button color="primary">Source Code</a>
-        </mat-card-actions>
-        <mat-card-footer>
-            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-        </mat-card-footer>
-    </mat-card>
-
-    <mat-card class="example-card">
-        <mat-card-header>
-            <mat-card-title>
-                <h2>Instagram Clone</h2>
-            </mat-card-title>
-        </mat-card-header>
-        <mat-divider></mat-divider>
-        <mat-card-content>
-            <h4>Tech stack:</h4>
-            <p>{{longText}}</p>
-            <h4>Description:</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloremque, hic omnis reprehenderit
-                pariatur
-                aspernatur neque labore nulla laborum reiciendis.</p>
-        </mat-card-content>
-        <mat-divider></mat-divider>
-        <mat-card-actions>
-            <a mat-raised-button color="primary">Source Code</a>
-        </mat-card-actions>
-        <mat-card-footer>
-            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-        </mat-card-footer>
-    </mat-card>
-
-    <mat-card class="example-card">
-        <mat-card-header>
-            <mat-card-title>
-                <h2>Instagram Clone</h2>
-            </mat-card-title>
-        </mat-card-header>
-        <mat-divider></mat-divider>
-        <mat-card-content>
-            <h4>Tech stack:</h4>
-            <p>{{longText}}</p>
-            <h4>Description:</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloremque, hic omnis reprehenderit
-                pariatur
-                aspernatur neque labore nulla laborum reiciendis.</p>
-        </mat-card-content>
-        <mat-divider></mat-divider>
-        <mat-card-actions>
-            <a mat-raised-button color="primary">Source Code</a>
-        </mat-card-actions>
-        <mat-card-footer>
-            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-        </mat-card-footer>
-    </mat-card>
-
-    <mat-card class="example-card">
-        <mat-card-header>
-            <mat-card-title>
-                <h2>Instagram Clone</h2>
-            </mat-card-title>
-        </mat-card-header>
-        <mat-divider></mat-divider>
-        <mat-card-content>
-            <h4>Tech stack:</h4>
-            <p>{{longText}}</p>
-            <h4>Description:</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloremque, hic omnis reprehenderit
-                pariatur
-                aspernatur neque labore nulla laborum reiciendis.</p>
-        </mat-card-content>
-        <mat-divider></mat-divider>
-        <mat-card-actions>
-            <a mat-raised-button color="primary">Source Code</a>
+            <a mat-raised-button href="{{project.link}}" target="_blank" color="primary">Source Code</a>
         </mat-card-actions>
         <mat-card-footer>
             <mat-progress-bar mode="indeterminate"></mat-progress-bar>

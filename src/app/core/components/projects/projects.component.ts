@@ -5,6 +5,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { PROJECT_DATA } from '../../constants/projects-data';
+import { CommonModule } from '@angular/common';
+import { ICON_EXT, ICON_PATH } from '../../constants/icons';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
     selector: 'app-projects',
@@ -18,8 +22,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
         MatDividerModule,
         MatButtonModule,
         MatGridListModule,
+        CommonModule,
+        MatTooltipModule,
     ],
 })
 export class ProjectsComponent {
-    longText = `Javascript, Typescript, Angular`;
+    projectsData = PROJECT_DATA;
+    iconPath = ICON_PATH;
+    iconExt = ICON_EXT;
 }

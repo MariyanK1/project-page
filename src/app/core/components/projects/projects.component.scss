@@ -1,15 +1,26 @@
 .projects-container {
+    padding: 1.4em;
     display: flex;
-    gap: 1.2em;
+    gap: 1em;
     flex-wrap: wrap;
-    padding: 1.4em 0;
-    height: 100vh;
-    align-items: flex-start;
+    place-content: flex-start;
+    align-items: baseline;
 
-    // TO DO > We have to find workound 100vh
-
-    .example-card {
+    .mat-card {
         max-width: 400px;
+        width: 400px;
+
+        .tech-used {
+            display: grid;
+            grid-template-columns: repeat(4, 30px);
+            gap: 0.6em;
+
+            .tech {
+                img {
+                    border-radius: 100vw;
+                }
+            }
+        }
 
         mat-card-header,
         mat-card-content,

@@ -10,4 +10,5 @@ export const ICON_NAMES = [
     'rxjs',
     'sass',
     'ts',
+    'node',
 ];

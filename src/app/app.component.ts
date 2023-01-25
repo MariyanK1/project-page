@@ -1,5 +1,11 @@
-import { ChangeDetectionStrategy, Component, HostBinding } from '@angular/core';
-import { OverlayContainer } from '@angular/cdk/overlay';
+import { DOCUMENT } from '@angular/common';
+import {
+    ChangeDetectionStrategy,
+    Component,
+    HostBinding,
+    Inject,
+} from '@angular/core';
+import { THEME_MODE } from './core/constants/theme-modes';
 
 @Component({
     selector: 'app-root',
@@ -8,17 +14,19 @@ import { OverlayContainer } from '@angular/cdk/overlay';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    @HostBinding('class') className = '';
+    @HostBinding('class') className = THEME_MODE.DARK;
 
-    constructor(private overlay: OverlayContainer) {}
+    constructor(@Inject(DOCUMENT) private document: Document) {
+        this.document.body.className = `mat-app-background`;
+    }
 
-    handleDarkMode(val: boolean) {
-        if (val) {
-            this.className = 'darkMode';
-            this.overlay.getContainerElement().classList.add(this.className);
+    handleDarkMode(isDarkMode: boolean) {
+        if (isDarkMode) {
+            this.className = THEME_MODE.DARK;
+            this.document.body.classList.add(this.className);
         } else {
-            this.overlay.getContainerElement().classList.remove(this.className);
-            this.className = '';
+            this.document.body.classList.remove(this.className);
+            this.className = THEME_MODE.LIGHT;
         }
     }
 }

@@ -10,6 +10,10 @@
         flex: 1 1 auto;
     }
 
+    .active-link {
+        background-color: lightcoral;
+    }
+
     .nav-buttons {
         display: flex;
         gap: 0.3em;

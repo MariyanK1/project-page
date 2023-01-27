@@ -1,6 +1,6 @@
 <mat-toolbar color="primary" class="toolbar-container">
     <a mat-mini-fab color="primary" routerLink="/" [routerLinkActiveOptions]="{exact: true}"
-        routerLinkActive="active-link" matTooltip="Home">
+        routerLinkActive="active-link" matTooltipClass="matTooltip" matTooltip="Home">
         <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
     </a>
     <span class="fill-remaining-space"></span>
@@ -15,8 +15,8 @@
             Contacts
         </a>
 
-        <a mat-mini-fab color="primary" matTooltip="{{darkMode.value ? 'Light Mode' : 'Dark Mode'}}"
-            (click)="toggleDarkMode()">
+        <a mat-mini-fab color="primary" matTooltipClass="matTooltip"
+            matTooltip="{{darkMode.value ? 'Light Mode' : 'Dark Mode'}}" (click)="toggleDarkMode()">
             <mat-icon>{{darkMode.value ? 'wb_sunny' : 'dark_mode'}}</mat-icon>
         </a>
     </div>

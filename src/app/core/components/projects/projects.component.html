@@ -10,7 +10,8 @@
             <h4>Built with:</h4>
             <div class="tech-used">
                 <div class="tech" *ngFor="let techName of project.tech">
-                    <img src="{{iconPath + techName + iconExt}}" alt="" matTooltip="{{techName | titlecase}}">
+                    <img src="{{iconPath + techName + iconExt}}" alt="{{techName}}" matTooltipClass="matTooltip"
+                        matTooltip="{{techName | titlecase}}">
                 </div>
             </div>
             <h4>Description:</h4>
@@ -21,7 +22,7 @@
             <a mat-raised-button href="{{project.link}}" target="_blank" color="primary">Source Code</a>
         </mat-card-actions>
         <mat-card-footer>
-            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            <mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
         </mat-card-footer>
     </mat-card>
 </div>

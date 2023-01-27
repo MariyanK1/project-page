@@ -2,12 +2,16 @@
 
 @include mat.core();
 
+$dark-palette: mat.define-palette(mat.$indigo-palette, 700);
+
+$light-palette: mat.define-palette(mat.$indigo-palette, 400);
+
 // Define a dark theme
 $dark-theme: mat.define-dark-theme(
     (
         color: (
-            primary: mat.define-palette(mat.$indigo-palette, 700),
-            accent: mat.define-palette(mat.$blue-grey-palette),
+            primary: $dark-palette,
+            accent: $dark-palette,
         ),
     )
 );
@@ -16,8 +20,8 @@ $dark-theme: mat.define-dark-theme(
 $light-theme: mat.define-light-theme(
     (
         color: (
-            primary: mat.define-palette(mat.$indigo-palette, 400),
-            accent: mat.define-palette(mat.$pink-palette, 600),
+            primary: $light-palette,
+            accent: $light-palette,
         ),
     )
 );

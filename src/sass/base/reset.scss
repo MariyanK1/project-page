@@ -26,18 +26,9 @@ svg {
 input,
 button,
 textarea,
+a,
 select {
     font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
 }
 
 #root,
@@ -49,4 +40,25 @@ a {
     text-decoration: none;
     color: inherit;
     word-break: break-all;
+}
+
+.matTooltip {
+    font-family: 'Roboto Regular', 'Segoe UI', Tahoma, Geneva, Verdana,
+        sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Black', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-wrap: break-word;
+}
+
+p {
+    font-family: 'Roboto Regular', 'Segoe UI', Tahoma, Geneva, Verdana,
+        sans-serif;
+    overflow-wrap: break-word;
 }

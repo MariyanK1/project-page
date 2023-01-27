@@ -11,12 +11,13 @@
         <mat-divider role="separator"></mat-divider>
         <div class="tech-stack">
             <div class="tech" *ngFor="let iconName of iconNames; let i = index"
-                matTooltip="{{iconNames[i].length >= 4 ? (iconNames[i] | titlecase) : (iconNames[i] | uppercase)}}">
+                matTooltip="{{iconNames[i].length >= 4 ? (iconNames[i] | titlecase) : (iconNames[i] | uppercase)}}"
+                matTooltipClass="matTooltip">
                 <img src="{{iconPath + iconName + iconExt}}" alt="{{iconName}}" />
             </div>
         </div>
         <mat-divider role="separator"></mat-divider>
-        <img class="skydiving" src="assets/skydiving.gif" alt="">
+        <img class="skydiving" src="assets/skydiving.gif" alt="My Skyding Experience">
     </div>
 
 </div>

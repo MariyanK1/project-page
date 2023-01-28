@@ -3,7 +3,7 @@
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
-    place-content: flex-start;
+    justify-content: center;
     align-items: baseline;
 
     .mat-card {

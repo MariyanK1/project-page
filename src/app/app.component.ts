@@ -20,7 +20,7 @@ export class AppComponent {
         this.document.body.className = `mat-app-background`;
     }
 
-    handleDarkMode(isDarkMode: boolean) {
+    handleDarkMode(isDarkMode: boolean): void {
         if (isDarkMode) {
             this.className = THEME_MODE.DARK;
             this.document.body.classList.add(this.className);

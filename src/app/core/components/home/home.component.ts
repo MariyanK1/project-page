@@ -14,7 +14,7 @@ import { ICON_NAMES, ICON_EXT, ICON_PATH } from 'src/app/core/constants/icons';
     imports: [CommonModule, MatTooltipModule, MatDividerModule],
 })
 export class HomeComponent {
-    iconExt = ICON_EXT;
-    iconPath = ICON_PATH;
-    iconNames = ICON_NAMES;
+    public iconExt = ICON_EXT;
+    public iconPath = ICON_PATH;
+    public iconNames = ICON_NAMES;
 }

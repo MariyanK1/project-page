@@ -10,7 +10,7 @@ import { BehaviorSubject } from 'rxjs';
 export class NavbarComponent {
     @Output('darkMode') darkMode = new BehaviorSubject(true);
 
-    toggleDarkMode() {
+    toggleDarkMode(): void {
         this.darkMode.next(!this.darkMode.value);
     }
 }

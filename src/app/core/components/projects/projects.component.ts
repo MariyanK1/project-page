@@ -27,7 +27,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     ],
 })
 export class ProjectsComponent {
-    projectsData = PROJECT_DATA;
-    iconPath = ICON_PATH;
-    iconExt = ICON_EXT;
+    public projectsData = PROJECT_DATA;
+    public iconPath = ICON_PATH;
+    public iconExt = ICON_EXT;
 }

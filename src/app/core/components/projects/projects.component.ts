@@ -1,14 +1,14 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { PROJECT_DATA } from '../../constants/projects-data';
-import { CommonModule } from '@angular/common';
-import { ICON_EXT, ICON_PATH } from '../../constants/icons';
 import { MatTooltipModule } from '@angular/material/tooltip';
+
+import { PROJECT_DATA } from '../../constants/projects-data';
+import { ICON_EXT, ICON_PATH } from '../../constants/icons';
 
 @Component({
     selector: 'app-projects',
@@ -21,7 +21,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
         MatProgressBarModule,
         MatDividerModule,
         MatButtonModule,
-        MatGridListModule,
         CommonModule,
         MatTooltipModule,
     ],

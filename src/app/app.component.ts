@@ -5,6 +5,7 @@ import {
     HostBinding,
     Inject,
 } from '@angular/core';
+
 import { THEME_MODE } from './core/constants/theme-modes';
 
 @Component({

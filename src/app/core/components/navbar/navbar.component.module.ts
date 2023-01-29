@@ -5,8 +5,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
+import { AppRoutingModule } from 'src/app/app-routing.module';
+
 import { NavbarComponent } from './navbar.component';
-import { AppRoutingModule } from 'src/app/app-routing,module';
 
 @NgModule({
     declarations: [NavbarComponent],

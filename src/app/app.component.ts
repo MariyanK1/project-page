@@ -15,7 +15,7 @@ import { THEME_MODE } from './core/constants/theme-modes';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    @HostBinding('class') className = THEME_MODE.DARK;
+    @HostBinding('class') className = THEME_MODE.LIGHT;
 
     constructor(@Inject(DOCUMENT) private document: Document) {
         this.document.body.className = `mat-app-background`;

@@ -5,6 +5,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { ICON_NAMES, ICON_EXT, ICON_PATH } from 'src/app/core/constants/icons';
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-home',
@@ -12,7 +13,7 @@ import { ICON_NAMES, ICON_EXT, ICON_PATH } from 'src/app/core/constants/icons';
     styleUrls: ['./home.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
     standalone: true,
-    imports: [CommonModule, MatTooltipModule, MatDividerModule],
+    imports: [CommonModule, MatTooltipModule, MatDividerModule, RouterModule],
 })
 export class HomeComponent {
     public iconExt = ICON_EXT;

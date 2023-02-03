@@ -19,6 +19,14 @@
         font-size: 1.6em;
         text-align: center;
 
+        .intro-paragraphs {
+            padding: 0 1em;
+        }
+
+        .projects-link {
+            color: #5c6bc0;
+        }
+
         .tech-stack {
             display: grid;
             grid-template-columns: repeat(5, 47px);
@@ -34,7 +42,6 @@
         }
 
         .skydiving {
-            width: min-content;
             margin: 0em auto;
             border-radius: 5px;
         }

@@ -3,6 +3,12 @@
     margin-top: 0.6em;
     font-family: 'Roboto-Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+    mat-icon {
+        width: 1em;
+        height: 1em;
+        font-size: 2em;
+    }
+
     .phone,
     .email {
         display: flex;
@@ -11,20 +17,14 @@
     }
 
     .phone {
-        mat-icon {
+        > :first-child {
             color: green;
-            width: 1em;
-            height: 1em;
-            font-size: 2em;
         }
     }
 
     .email {
-        mat-icon {
+        > :first-child {
             color: orangered;
-            width: 1em;
-            height: 1em;
-            font-size: 2em;
         }
     }
 }

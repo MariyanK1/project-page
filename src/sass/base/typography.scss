@@ -4,19 +4,25 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
+    overflow-wrap: break-word;
+}
+
+.md-fnt {
     font-family: 'Roboto Medium', 'Segoe UI', Tahoma, Geneva, Verdana,
         sans-serif;
-    overflow-wrap: break-word;
 }
 
-p {
+.rglr-fnt {
     font-family: 'Roboto Regular', 'Segoe UI', Tahoma, Geneva, Verdana,
         sans-serif;
-    overflow-wrap: break-word;
 }
 
-.matTooltip {
-    font-family: 'Roboto Regular', 'Segoe UI', Tahoma, Geneva, Verdana,
-        sans-serif;
+.blck-fnt {
+    font-family: 'Roboto Black', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bld-fnt {
+    font-family: 'Roboto-Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

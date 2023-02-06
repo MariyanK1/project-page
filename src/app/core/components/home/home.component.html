@@ -11,7 +11,7 @@
             </p>
             <p>Love working with:</p>
         </div>
-        <mat-divider role="separator"></mat-divider>
+        <mat-divider role="separator" />
         <div class="tech-stack">
             <div class="tech" *ngFor="let iconName of iconNames; let i = index"
                 matTooltip="{{iconNames[i].length >= 4 ? (iconNames[i] | titlecase) : (iconNames[i] | uppercase)}}"
@@ -19,7 +19,7 @@
                 <img src="{{iconPath + iconName + iconExt}}" alt="{{iconName}}" />
             </div>
         </div>
-        <mat-divider role="separator"></mat-divider>
+        <mat-divider role="separator" />
         <img title="My Skyding Experience" class="skydiving" src="assets/skydiving.gif" alt="My Skyding Experience">
     </div>
 

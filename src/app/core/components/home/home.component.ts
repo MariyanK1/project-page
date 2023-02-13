@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { ICON_NAMES, ICON_EXT, ICON_PATH } from 'src/app/core/constants/icons';
-import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-home',

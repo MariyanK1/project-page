@@ -1,3 +1,4 @@
+// TODO: Add interface for that
 export const PROJECT_DATA = [
     {
         title: 'instagram clone',
@@ -14,5 +15,11 @@ export const PROJECT_DATA = [
         `,
         tech: ['react', 'js', 'css'],
         link: 'https://github.com/MariyanK1/Github-Finder',
+    },
+    {
+        title: 'resizable columns',
+        description: 'Custom resizable columns directive ',
+        tech: ['angular'],
+        link: 'https://github.com/MariyanK1/angular-resiable-column/tree/main/resizable-columns',
     },
 ];

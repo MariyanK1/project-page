@@ -1,5 +1,6 @@
-// TODO: Add interface for that
-export const PROJECT_DATA = [
+import { IProjectData } from './interfaces';
+
+export const PROJECT_DATA: IProjectData[] = [
     {
         title: 'instagram clone',
         description: `I challenged myself with the task of creating a Full-Stack SPA with pure Javscript.

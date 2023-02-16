@@ -19,7 +19,7 @@ export const PROJECT_DATA: IProjectData[] = [
     },
     {
         title: 'resizable columns',
-        description: 'Custom resizable columns directive ',
+        description: 'Custom resizable columns directive.',
         tech: ['angular'],
         link: 'https://github.com/MariyanK1/angular-resiable-column/tree/main/resizable-columns',
     },

@@ -11,4 +11,6 @@ export const ICON_NAMES = [
     'sass',
     'ts',
     'node',
-];
+] as const;
+
+export type PossibleNames = (typeof ICON_NAMES)[number];

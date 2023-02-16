@@ -1,6 +1,8 @@
+import { PossibleNames } from './icons';
+
 export interface IProjectData {
     title: string;
     description: string;
-    tech: string[];
+    tech: PossibleNames[];
     link: string;
 }

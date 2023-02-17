@@ -9,7 +9,7 @@
         <mat-card-content class="blck-fnt">
             <h4>Built with:</h4>
             <div class="tech-used">
-                <div class="tech" *ngFor="let techName of project.tech">
+                <div class="tech" *ngFor="let techName of project.tech; trackByIndex">
                     <img src="{{iconPath + techName + iconExt}}" alt="{{techName}}" matTooltipClass="md-fnt"
                         matTooltip="{{techName | titlecase}}">
                 </div>

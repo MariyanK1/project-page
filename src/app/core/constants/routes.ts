@@ -6,25 +6,19 @@ export const ROUTES: Routes = [
     {
         path: '',
         loadComponent: () =>
-            import('../components/home/home.component').then(
-                (c) => c.HomeComponent
-            ),
+            import('../components/home').then((c) => c.HomeComponent),
         title: 'Mariyan :: Home',
     },
     {
         path: 'projects',
         loadComponent: () =>
-            import('../components/projects/projects.component').then(
-                (c) => c.ProjectsComponent
-            ),
+            import('../components/projects').then((c) => c.ProjectsComponent),
         title: 'Mariyan :: Projects',
     },
     {
         path: 'contacts',
         loadComponent: () =>
-            import('../components/contacts/contacts.component').then(
-                (c) => c.ContactsComponent
-            ),
+            import('../components/contacts').then((c) => c.ContactsComponent),
         title: 'Mariyan :: Contacts',
     },
     {

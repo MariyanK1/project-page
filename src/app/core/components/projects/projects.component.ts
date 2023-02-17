@@ -7,8 +7,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
-import { PROJECT_DATA } from '../../constants/projects-data';
-import { ICON_EXT, ICON_PATH } from '../../constants/icons';
+import { PROJECT_DATA } from 'src/app/core/constants/projects-data';
+import { ICON_EXT, ICON_PATH } from 'src/app/core/constants/icons';
 
 @Component({
     selector: 'app-projects',

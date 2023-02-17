@@ -13,7 +13,7 @@
         </div>
         <mat-divider role="separator" />
         <div class="tech-stack">
-            <div class="tech" *ngFor="let iconName of iconNames; index as i"
+            <div class="tech" *ngFor="let iconName of iconNames; index as i; trackByIndex"
                 matTooltip="{{iconNames[i].length >= 4 ? (iconNames[i] | titlecase) : (iconNames[i] | uppercase)}}"
                 matTooltipClass="md-fnt">
                 <img src="{{iconPath + iconName + iconExt}}" alt="{{iconName}}" />

@@ -23,4 +23,10 @@ export const PROJECT_DATA: IProjectData[] = [
         tech: ['angular'],
         link: 'https://github.com/MariyanK1/angular-resiable-column/tree/main/resizable-columns',
     },
+    {
+        title: 'crud api',
+        description: 'CRUD API written in Golang',
+        tech: ['golang'],
+        link: 'https://github.com/MariyanK1/CRUD-API-golang-',
+    },
 ];

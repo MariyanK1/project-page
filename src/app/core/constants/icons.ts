@@ -11,6 +11,7 @@ export const ICON_NAMES = [
     'sass',
     'ts',
     'node',
+    'golang',
 ] as const;
 
 export type PossibleNames = (typeof ICON_NAMES)[number];

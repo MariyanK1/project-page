@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent {
-    @Output('darkMode') darkMode = new BehaviorSubject(false);
+    @Output('darkMode') darkMode = new BehaviorSubject(true);
 
     toggleDarkMode(): void {
         this.darkMode.next(!this.darkMode.value);

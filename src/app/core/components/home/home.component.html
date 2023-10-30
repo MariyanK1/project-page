@@ -1,22 +1,38 @@
 <div class="container">
-    <div class="intro-img">
-        <img src="assets/me.jpg" alt="">
-    </div>
     <div class="intro">
         <div class="intro-paragraphs rglr-fnt">
-            <p>My name is Mariyan and I am a web developer, gym enthusiast and a part-time skydiver.</p>
-            <p>I've been working as a <b>Front End Dev</b> for <b>3 years</b> and I love it!</p>
-            <p>You can check my projects at
-                <a [routerLink]="['/projects']" class="projects-link">Projects Page</a>.
+            <p>
+                My name is Mariyan and I am a web developer, gym enthusiast and
+                a part-time skydiver.
+            </p>
+            <p>
+                I've been working as a <b>Front End Dev</b> for
+                <b>3 years</b> and I love it!
+            </p>
+            <p>
+                You can check my projects at
+                <a [routerLink]="['/projects']" class="projects-link"
+                    >Projects Page</a
+                >.
             </p>
             <p>Love working with:</p>
         </div>
         <mat-divider role="separator" />
         <div class="tech-stack">
-            <div class="tech" *ngFor="let iconName of iconNames; index as i; trackByIndex"
-                matTooltip="{{iconNames[i].length >= 4 ? (iconNames[i] | titlecase) : (iconNames[i] | uppercase)}}"
-                matTooltipClass="md-fnt">
-                <img src="{{iconPath + iconName + iconExt}}" alt="{{iconName}}" />
+            <div
+                class="tech"
+                *ngFor="let iconName of iconNames; index as i; trackByIndex"
+                matTooltip="{{
+                    iconNames[i].length >= 4
+                        ? (iconNames[i] | titlecase)
+                        : (iconNames[i] | uppercase)
+                }}"
+                matTooltipClass="md-fnt"
+            >
+                <img
+                    src="{{ iconPath + iconName + iconExt }}"
+                    alt="{{ iconName }}"
+                />
             </div>
         </div>
         <mat-divider role="separator" />
@@ -24,5 +40,4 @@
             <source src="assets/skydiving.webm" type="video/webm" />
         </video>
     </div>
-
 </div>

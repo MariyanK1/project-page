@@ -1,24 +1,49 @@
 <mat-toolbar color="primary" class="toolbar-container md-fnt">
-    <a mat-mini-fab color="primary" routerLink="/" [routerLinkActiveOptions]="{exact: true}"
-        routerLinkActive="active-link" matTooltipClass="md-fnt" matTooltip="Home">
+    <a
+        mat-mini-fab
+        color="primary"
+        routerLink="/"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active-link"
+        matTooltipClass="md-fnt"
+        matTooltip="Home"
+    >
         <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
     </a>
     <span class="fill-remaining-space"></span>
     <div class="nav-buttons">
-        <a mat-button routerLink="/projects" matTooltipClass="md-fnt" routerLinkActive="active-link">
-            <mat-icon aria-hidden="false" aria-label="business icon">business_center</mat-icon>
+        <a
+            mat-button
+            routerLink="/projects"
+            matTooltipClass="md-fnt"
+            routerLinkActive="active-link"
+        >
+            <mat-icon aria-hidden="false" aria-label="business icon"
+                >business_center</mat-icon
+            >
             Projects
         </a>
 
-        <a mat-button routerLink="/contacts" matTooltipClass="md-fnt" routerLinkActive="active-link">
-            <mat-icon aria-hidden="false" aria-label="contact icon">contact_mail</mat-icon>
+        <a
+            mat-button
+            routerLink="/contacts"
+            matTooltipClass="md-fnt"
+            routerLinkActive="active-link"
+        >
+            <mat-icon aria-hidden="false" aria-label="contact icon"
+                >contact_mail</mat-icon
+            >
             Contacts
         </a>
 
-        <a mat-mini-fab color="primary" matTooltipClass="md-fnt"
-            matTooltip="{{darkMode.value ? 'Light Mode' : 'Dark Mode'}}" (click)="toggleDarkMode()">
-            <mat-icon>{{darkMode.value ? 'wb_sunny' : 'dark_mode'}}</mat-icon>
+        <a
+            mat-mini-fab
+            color="primary"
+            matTooltipClass="md-fnt"
+            matTooltip="{{ darkMode.value ? 'Light Mode' : 'Dark Mode' }}"
+            (click)="toggleDarkMode()"
+        >
+            <mat-icon>{{ darkMode.value ? 'wb_sunny' : 'dark_mode' }}</mat-icon>
         </a>
     </div>
-
 </mat-toolbar>
